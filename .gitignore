@@ -3,3 +3,5 @@
 .bundle/*
 log/*
 tmp/*
+config/*
+Capfile
