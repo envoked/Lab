@@ -20,3 +20,10 @@ end
 get '/' do
   "WOOO"
 end
+
+# action needed to help generate file  to avoid coding in .NET
+get '/story' do
+   # haml :story don't need this right now
+   "http://www.google.com/                            Google
+    http://www.bing.com/                              Bing"
+end
