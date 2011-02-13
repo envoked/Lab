@@ -23,7 +23,7 @@ end
 
 # action needed to help generate file  to avoid coding in .NET
 get '/story' do
-   # haml :story don't need this right now
+    content_type 'text/plain', :charset => 'utf-8'
    "http://www.google.com/                            Google
     http://www.bing.com/                              Bing"
 end
