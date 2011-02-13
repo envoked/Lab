@@ -21,8 +21,14 @@ get '/' do
   "WOOO"
 end
 
+get '/experiments/:title' do
+  haml :'experiments/threejs/index'
+end
+
 # action needed to help generate file  to avoid coding in .NET
 get '/story' do
     content_type 'text/plain', :charset => 'utf-8'
-   "http://www.google.com/                            Google \nhttp://www.butdoesitfloat.com/                    But Does it Float"
+    #return directories that aren't hidden
+    @experiments = Dir.entries("views/experiments").select{|f| !(f =~ /^[.].*/)}
+    haml :story
 end
