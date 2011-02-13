@@ -25,5 +25,5 @@ end
 get '/story' do
     content_type 'text/plain', :charset => 'utf-8'
    "http://www.google.com/                            Google
-    http://www.bing.com/                              Bing"
+    http://www.butdoesitfloat.com/                              But Does it Float"
 end
