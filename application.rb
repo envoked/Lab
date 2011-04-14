@@ -22,7 +22,7 @@ get '/' do
 end
 
 get '/experiments/:title' do
-  haml :'experiments/threejs/index'
+  haml :"experiments/#{params[:title]}/index"
 end
 
 # action needed to help generate file  to avoid coding in .NET
